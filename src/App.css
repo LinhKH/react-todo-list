@@ -1,77 +1,93 @@
-.container {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+    color: #444;
+    background: #fff;
+    height: 100vh;
+  }
+  
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
-}
-
-.inner {
+  }
+  
+  .inner {
     width: 100%;
-    padding: 0rem 10px 4rem;
-}
-
-.form-container {
+    padding: 8rem 10px 4rem;
+  }
+  
+  .form-container {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
     border-radius: calc(0.5 * 100px);
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
     justify-content: space-evenly;
-}
-
-.input-text {
+  }
+  
+  .input-text {
     font-size: 1rem;
     font-weight: 400;
     width: 85%;
     padding-right: 5px;
     padding-left: 10px;
     border-radius: calc(0.5 * 100px);
-}
-
-.input-text::placeholder {
+  }
+  
+  .input-text::placeholder {
     color: #000;
-}
-
-.input-submit {
+  }
+  
+  .input-submit {
     background: transparent;
     color: #5b5b5b;
     text-transform: capitalize;
     cursor: pointer;
     font-weight: 600;
     margin-right: 10px;
-}
-
-.input-text,
-.input-submit {
+  }
+  
+  .input-text,
+  .input-submit {
     height: 45px;
     outline: none;
     border: none;
-}
-
-.active-link {
+  }
+  
+  .active-link {
     color: orangered;
     text-decoration: underline;
-}
-
-/* sidebar Nav */
-
-.navBar {
+  }
+  
+  /* sidebar Nav */
+  
+  .navBar {
     position: relative;
-}
-
-.navBar button {
+  }
+  
+  .navBar button {
     position: fixed;
     left: 40px;
     top: 40px;
     z-index: 10;
     cursor: pointer;
+    /* addition */
     background: transparent;
     border: none;
-}
-
-.menuNav {
+    outline: none;
+  }
+  
+  .menuNav {
     overflow-y: scroll;
     list-style: none;
     position: fixed;
@@ -84,35 +100,29 @@
     overflow: hidden;
     max-width: 290px;
     z-index: 9;
-}
-
-.menuNav.showMenu {
+  }
+  
+  .menuNav.showMenu {
     width: 100%;
-}
-
-a {
+  }
+  
+  a {
     display: block;
     padding: 10px 40px;
     text-decoration: none;
     color: #3fffd2;
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.menuNav li:first-child {
+    outline: none;
+  }
+  
+  .menuNav li:first-child {
     margin-top: 7rem;
-}
-
-/* end:sidebar Nav */
-
-.headerStyle {
-    padding: "20px 0";
-    line-height: "1.5em";
-}
-
-/* about page */
-
-.about__content {
+  }
+  
+  /* about page */
+  
+  .about__content {
     padding: 8rem 40px;
     display: flex;
   }
